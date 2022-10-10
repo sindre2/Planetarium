@@ -15,6 +15,7 @@ const Navbar = () => {
           <NavItems to="/uranus">Uranus</NavItems>
           <NavItems to="/neptune">Neptune</NavItems>
           <NavItems to="/pluto">Pluto</NavItems>
+          <NavItems to="/contact">Contact</NavItems>
         </NavList>
       </Nav>
     </>

@@ -13,6 +13,7 @@ import Venus from "./landingPage/Venus";
 import { useEffect, useState } from "react";
 import { PlanetContext } from "../components/PlanetContext";
 import axios from "axios";
+import Contact from "./landingPage/Contact";
 
 const LandingPage = () => {
   const [planets, setPlanets] = useState();
@@ -42,6 +43,8 @@ const LandingPage = () => {
           <Route path="/uranus" element={<Uranus />} />
           <Route path="/neptune" element={<Neptune />} />
           <Route path="/pluto" element={<Pluto />} />
+          <Route path="/pluto" element={<Pluto />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </PlanetContext.Provider>
     </>
