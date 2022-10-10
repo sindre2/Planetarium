@@ -3,6 +3,7 @@ const HomePage = () => {
   return (
     <div>
       <h1>{pageName}</h1>
+      <p>Test</p>
     </div>
   );
 };

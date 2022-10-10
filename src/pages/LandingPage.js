@@ -1,5 +1,5 @@
 import Navbar from "../components/Navbar/Navbar";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import HomePage from "../pages/landingPage/Home";
 import Mercury from "../pages/landingPage/Mercury";
 import Earth from "../pages/landingPage/Earth";
@@ -14,6 +14,7 @@ import { useEffect, useState } from "react";
 import { PlanetContext } from "../components/PlanetContext";
 import axios from "axios";
 import Contact from "./landingPage/Contact";
+import RouteNotFound from "./landingPage/404";
 
 const LandingPage = () => {
   const [planets, setPlanets] = useState();
@@ -33,6 +34,7 @@ const LandingPage = () => {
       <Navbar />
       <PlanetContext.Provider value={{ planetData, planets }}>
         <Routes>
+          <Route path="/" element={<Navigate to="/home" />} />
           <Route path="/home" element={<HomePage />} />
           <Route path="/mercury" element={<Mercury />} />
           <Route path="/venus" element={<Venus />} />
@@ -45,6 +47,7 @@ const LandingPage = () => {
           <Route path="/pluto" element={<Pluto />} />
           <Route path="/pluto" element={<Pluto />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<RouteNotFound />} />
         </Routes>
       </PlanetContext.Provider>
     </>
