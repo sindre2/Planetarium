@@ -1,3 +1,4 @@
+import React from "react";
 const Mercury = () => {
   const pageName = "Mercury";
   return (
