@@ -6,7 +6,6 @@ const Jupiter = () => {
   const { planets } = useContext(PlanetContext);
 
   const jupiterInfo = planets ? planets.data.bodies[2] : "Loading";
-  console.log(planets);
 
   return (
     <div>
