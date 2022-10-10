@@ -28,14 +28,14 @@ export const particlesConfig = {
       enable: true,
       outMode: "out",
       random: true,
-      speed: 0.1,
+      speed: 0.2,
       straight: false,
     },
     opacity: {
       anim: {
         enable: true,
         minimumValue: 0,
-        speed: 1,
+        speed: 0.5,
         sync: false,
       },
       random: true,
