@@ -8,3 +8,4 @@ const Earth = () => {
 };
 
 export default Earth;
+//LOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOL
