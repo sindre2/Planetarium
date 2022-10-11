@@ -1,4 +1,3 @@
-import React from "react";
 import { useContext } from "react";
 import { PlanetContext } from "../../components/PlanetContext";
 import { PlanetInfo } from "../../components/PlanetInfo";

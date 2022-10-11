@@ -1,4 +1,3 @@
-import React from "react";
 import { NavItems, Nav, NavList } from "./navbarStyles";
 
 const Navbar = () => {
