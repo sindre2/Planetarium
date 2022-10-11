@@ -8,7 +8,7 @@ export const Nav = styled.nav`
   height: 100px;
   background: #262321;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 `;
 export const NavList = styled.ul`
