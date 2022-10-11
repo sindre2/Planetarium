@@ -1,9 +1,9 @@
 import React,{useState} from "react";
-import { Form } from "../../components/formcomponents/Form";
-import "../../components/formcomponents/formstyle.css"
+
+import "../../components/formcomponents/formtwostyle.css"
 
 import { FormTwo } from "../../components/formtwo/Formtwo";
-const Contact = () => {
+const Contact2 = () => {
   const pageName = "Contact";
 
   
@@ -11,10 +11,10 @@ const Contact = () => {
   return (
     <div>
       <h1>{pageName}</h1>
-      <Form />
+      <FormTwo />
      
     </div>
   );
 };
 
-export default Contact;
+export default Contact2;
