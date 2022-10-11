@@ -4,7 +4,11 @@ const Navbar = () => {
   return (
     <>
       <Nav>
-        <NavItems to="/home">Planetarium</NavItems>
+        <NavList>
+          <li>
+            <NavItems to="/home">Planetarium</NavItems>
+          </li>
+        </NavList>
 
         <NavList>
           <li>
@@ -31,12 +35,13 @@ const Navbar = () => {
           <li>
             <NavItems to="/neptune">Neptune</NavItems>
           </li>
-          <li>
-            <NavItems to="/pluto">Pluto</NavItems>
-          </li>
         </NavList>
 
-        <NavItems to="/contact">Contact</NavItems>
+        <NavList>
+          <li>
+            <NavItems to="/contact">Contact</NavItems>
+          </li>
+        </NavList>
       </Nav>
     </>
   );

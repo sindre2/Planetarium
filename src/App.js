@@ -1,9 +1,12 @@
+import Provider from "./components/ThemeProvider/Provider";
 import LandingPage from "./pages/LandingPage";
 
 function App() {
   return (
     <div className="App">
-      <LandingPage />
+      <Provider>
+        <LandingPage />
+      </Provider>
     </div>
   );
 }
