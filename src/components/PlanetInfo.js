@@ -23,32 +23,68 @@ export function PlanetInfo(props) {
     <>
       <h1>{planetInfo.englishName}</h1>
       <p>{wikiText}</p>
-      <table>
-        <tr>
+      <section>
+        <div>
           Discovered: "
           {planetInfo.discoveryDate ? planetInfo.discoveryDate : "unknown date"}
           " by "{planetInfo.discoveredBy ? planetInfo.discoveredBy : "unknown"}"
-        </tr>
-        <tr>
-          Gravity: {planetInfo.gravity} m/s<sup>2</sup>
-        </tr>
-        <tr>
-          Mass: {planetInfo.mass.massValue} * 10
-          <sup>{planetInfo.mass.massExponent}</sup> kg
-        </tr>
-        <tr>
-          Volume: {planetInfo.vol.volValue} * 10
-          <sup>{planetInfo.vol.volExponent}</sup> km<sup>3</sup>
-        </tr>
-        <tr>Escape height: {planetInfo.escape} km</tr>
-        <tr>
+        </div>
+        <div>
+          Gravity:{" "}
+          {planetInfo.gravity ? planetInfo.gravity.toFixed(2) : "Loading"} m/s
+          <sup>2</sup>
+        </div>
+        <div>
+          Mass:{" "}
+          {planetInfo.mass ? planetInfo.mass.massValue.toFixed(2) : "Loading"} *
+          10
+          <sup>
+            {planetInfo.mass ? planetInfo.mass.massExponent : "Loading"}
+          </sup>{" "}
+          kg
+        </div>
+        <div>
+          Volume:{" "}
+          {planetInfo.vol ? planetInfo.vol.volValue.toFixed(2) : "Loading"} * 10
+          <sup>{planetInfo.vol ? planetInfo.volExponent : "Loading"}</sup> km
+          <sup>3</sup>
+        </div>
+        <div>
+          Escape height:{" "}
+          {planetInfo.escape ? planetInfo.escape.toExponential(2) : "Loading"}{" "}
+          km
+        </div>
+        <div>
           Avg. Temperature: {tempDecimal} <sup>o</sup>C
-        </tr>
-        <tr>Radius: {planetInfo.meanRadius} km</tr>
-        <tr>Polar radius: {planetInfo.polarRadius} km</tr>
-        <tr>Perihelion: {planetInfo.perihelion} km </tr>
-        <tr>Aphelion: {planetInfo.aphelion} km</tr>
-      </table>
+        </div>
+        <div>
+          Radius: {planetInfo.meanRadius ? planetInfo.meanRadius : "Loading"} km
+        </div>
+        <div>
+          Polar radius:{" "}
+          {planetInfo.polarRadius
+            ? planetInfo.polarRadius.toExponential(2)
+            : "Loading"}{" "}
+          km
+        </div>
+        <div>
+          Perihelion:{" "}
+          {planetInfo.perihelion
+            ? planetInfo.perihelion.toExponential(2)
+            : "Loading"}{" "}
+          km{" "}
+        </div>
+        <div>
+          Aphelion:{" "}
+          {planetInfo.aphelion
+            ? planetInfo.aphelion.toExponential(2)
+            : "Loading"}{" "}
+          km
+        </div>
+        <div>
+          Moons: {planetInfo.moons ? planetInfo.moons.length : "No moons"}
+        </div>
+      </section>
     </>
   );
 }
