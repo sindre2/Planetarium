@@ -1,8 +1,10 @@
+import { PlanetInfo } from "../../components/PlanetInfo";
+
 const Uranus = () => {
   const pageName = "Uranus";
   return (
     <div>
-      <h1>{pageName}</h1>
+      <PlanetInfo index={0} name={"Uranus"}/>
     </div>
   );
 };

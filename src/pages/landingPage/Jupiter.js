@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { PlanetContext } from "../../components/PlanetContext";
+import { PlanetInfo } from "../../components/PlanetInfo";
 
 const Jupiter = () => {
   const pageName = "Jupiter";
@@ -16,6 +17,7 @@ const Jupiter = () => {
         <li>{jupiterInfo.moons ? jupiterInfo.moons[0].moon : "Loading"}</li>
         <li>{jupiterInfo ? jupiterInfo.bodyType : "Loading"}</li>
       </ul>
+      <PlanetInfo index={2} name={"Jupiter"}/>
     </div>
   );
 };
