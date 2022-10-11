@@ -4,7 +4,7 @@ const Mercury = () => {
   const pageName = "Mercury";
   return (
     <div>
-      <PlanetInfo index={4} name={"Mercury"}/>
+      <PlanetInfo index={4} name={"Mercury_Planet"}/>
     </div>
   );
 };
