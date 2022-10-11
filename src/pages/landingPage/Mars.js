@@ -1,9 +1,10 @@
-import React from "react";
+import { PlanetInfo } from "../../components/PlanetInfo";
+
 const Mars = () => {
   const pageName = "Mars";
   return (
     <div>
-      <h1>{pageName}</h1>
+      <PlanetInfo index={3} name={"Mars"}/>
     </div>
   );
 };

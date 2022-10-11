@@ -15,7 +15,9 @@ import { useEffect, useState } from "react";
 import { PlanetContext } from "../components/PlanetContext";
 import axios from "axios";
 import Contact from "./landingPage/Contact";
+import Background from "../components/Background/BackgroundParticles";
 import RouteNotFound from "./landingPage/404";
+
 
 const LandingPage = () => {
   const [planets, setPlanets] = useState();
@@ -32,6 +34,7 @@ const LandingPage = () => {
 
   return (
     <>
+      <Background />
       <Navbar />
       <PlanetContext.Provider value={{ planetData, planets }}>
         <Routes>
