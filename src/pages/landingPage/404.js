@@ -1,3 +1,4 @@
+import React from "react";
 const RouteNotFound = () => {
   const pageName = "404";
   return (
