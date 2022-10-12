@@ -35,7 +35,7 @@ export const NavList = styled.ul`
   }
 `;
 export const NavListMain = styled(NavList)`
-  min-width: 40%;
+  min-width: 50%;
   justify-content: space-around;
 `;
 export const NavItems = styled(NavLink)`
