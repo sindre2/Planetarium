@@ -1,4 +1,4 @@
-import { NavItems, Nav, NavList } from "./navbarStyles";
+import { NavItems, Nav, NavList, NavListMain } from "./navbarStyles";
 
 const Navbar = () => {
   return (
@@ -10,7 +10,7 @@ const Navbar = () => {
           </li>
         </NavList>
 
-        <NavList>
+        <NavListMain>
           <li>
             <NavItems to="/mercury">Mercury</NavItems>
           </li>
@@ -35,7 +35,7 @@ const Navbar = () => {
           <li>
             <NavItems to="/neptune">Neptune</NavItems>
           </li>
-        </NavList>
+        </NavListMain>
 
         <NavList>
           <li>
