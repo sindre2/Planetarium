@@ -4,9 +4,10 @@ export const PlanetContainer = styled.div`
   display: grid;
   height: 100%;
   width: 100%;
-  grid-template-rows: 40px auto auto auto auto 200px;
+  grid-template-rows: 40px auto auto auto auto fit-content;
   grid-template-columns: auto auto auto;
   grid-gap: 10px;
+  z-index: 100;
   grid-template-areas:
     "title title title"
     "image image wiki"
@@ -16,15 +17,18 @@ export const PlanetContainer = styled.div`
     "none none data";
 
   padding: 40px;
-  background-color: blueviolet;
-  & > * {
-    border: 2px solid cyan;
-  }
+  background-color: rgba(0,0,0, 0.5);
+  border-radius: 15px;
+  border: 2px solid ${(props)=> props.theme.colors.nav_link_hover};
   & > img {
     grid-area: image;
   }
-  & > .planetTitle {
+  & > .planet_Title {
     grid-area: title;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
   & > main {
     grid-area: wiki;
@@ -37,30 +41,27 @@ export const PlanetContainer = styled.div`
 export const PlanetSection = styled.section`
   height: 100%;
   padding: 5px;
-  
-  & .data_Container{
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+
+  & .data_Container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
   }
 
-  & .planet_Title{
+  & .planet_Title {
     text-align: center;
   }
   & .data_Text {
-    display: flex;
-    flex-direction: column;
     padding: 0 3rem;
   }
-  & .data_Text span {
-    margin-left: auto;
-    
+  & td {
+    padding-right: 20px;
   }
-  & .data_Number{
-    margin-left: 20px;
-    display: flex;
-    flex-direction: column;
 
+  & .data_Number {
+    list-style-type: none;
+    padding: 0;
+    line-height: 1rem;
   }
 `;
 
