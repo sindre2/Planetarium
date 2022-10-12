@@ -1,9 +1,7 @@
-#maincontainer{
-    width: 1300px;
-    height: max-content;
+#maincontainer {
+  width: 1300px;
+  height: max-content;
 }
-
-
 
 .solar-system {
   position: relative;
@@ -147,81 +145,72 @@ and planet size. And colors :) */
 }
 
 #jupiter {
-    margin-top: -16px;
-    margin-left: -16px;
-    height: 32px;
-    width: 32px;
-    background-color: beige;
-    box-shadow: 0 0 14px #a64232;
-    
-  }
-  
-  .jupiter-orbit,
-  .jupiter-spin {
-    width: 800px;
-    height: 800px;
-    margin-left: -400px;
-    margin-top: -400px;
-    
-  }
-  
-  #saturn {
-    margin-top: -16px;
-    margin-left: -16px;
-    height: 32px;
-    width: 32px;
-    background-color: gray;
-    box-shadow: 0 0 14px #a64232;
-    
-  }
-  
-  .saturn-orbit,
-  .saturn-spin {
-    width: 900px;
-    height: 900px;
-    margin-left: -450px;
-    margin-top: -450px;
-    
-  }
-  
-  #uranus {
-    margin-top: -16px;
-    margin-left: -16px;
-    height: 32px;
-    width: 32px;
-    background-color: rgb(70, 67, 67);
-    box-shadow: 0 0 14px #424141;
-    
-  }
-  
-  .uranus-orbit,
-  .uranus-spin {
-    width: 1000px;
-    height: 1000px;
-    margin-left: -500px;
-    margin-top: -500px;
-    
-  }
+  margin-top: -16px;
+  margin-left: -16px;
+  height: 32px;
+  width: 32px;
+  background-color: beige;
+  box-shadow: 0 0 14px #a64232;
+}
 
-  #neptune {
-    margin-top: -16px;
-    margin-left: -16px;
-    height: 32px;
-    width: 32px;
-    background-color: rgb(35, 92, 179);
-    box-shadow: 0 0 14px #41ebe2;
-    
-  }
-  
-  .neptune-orbit,
-  .neptune-spin {
-    width: 1100px;
-    height: 1100px;
-    margin-left: -550px;
-    margin-top: -550px;
-    
-  }
+.jupiter-orbit,
+.jupiter-spin {
+  width: 800px;
+  height: 800px;
+  margin-left: -400px;
+  margin-top: -400px;
+}
 
+#saturn {
+  margin-top: -16px;
+  margin-left: -16px;
+  height: 32px;
+  width: 32px;
+  background-color: gray;
+  box-shadow: 0 0 14px #a64232;
+}
+
+.saturn-orbit,
+.saturn-spin {
+  width: 900px;
+  height: 900px;
+  margin-left: -450px;
+  margin-top: -450px;
+}
+
+#uranus {
+  margin-top: -16px;
+  margin-left: -16px;
+  height: 32px;
+  width: 32px;
+  background-color: rgb(70, 67, 67);
+  box-shadow: 0 0 14px #424141;
+}
+
+.uranus-orbit,
+.uranus-spin {
+  width: 1000px;
+  height: 1000px;
+  margin-left: -500px;
+  margin-top: -500px;
+}
+
+#neptune {
+  margin-top: -16px;
+  margin-left: -16px;
+  height: 32px;
+  width: 32px;
+  background-color: rgb(35, 92, 179);
+  box-shadow: 0 0 14px #41ebe2;
+}
+
+.neptune-orbit,
+.neptune-spin {
+  width: 1100px;
+  height: 1100px;
+  margin-left: -550px;
+  margin-top: -550px;
+}
 
 /* Spinning animations */
 
@@ -247,17 +236,17 @@ and planet size. And colors :) */
   animation: spin-right 68.7s linear infinite;
 }
 .jupiter-spin {
-    animation: spin-right 68.7s linear infinite;
-  }
+  animation: spin-right 68.7s linear infinite;
+}
 
-  .saturn-spin {
-    animation: spin-right 68.7s linear infinite;
-  }
+.saturn-spin {
+  animation: spin-right 68.7s linear infinite;
+}
 
-  .uranus-spin {
-    animation: spin-right 68.7s linear infinite;
-  }
+.uranus-spin {
+  animation: spin-right 68.7s linear infinite;
+}
 
-  .neptune-spin {
-    animation: spin-right 68.7s linear infinite;
-  }
+.neptune-spin {
+  animation: spin-right 68.7s linear infinite;
+}
