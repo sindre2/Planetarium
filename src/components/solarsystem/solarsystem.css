@@ -236,17 +236,17 @@ and planet size. And colors :) */
   animation: spin-right 68.7s linear infinite;
 }
 .jupiter-spin {
-  animation: spin-right 68.7s linear infinite;
+  animation: spin-right 98.7s linear infinite;
 }
 
 .saturn-spin {
-  animation: spin-right 68.7s linear infinite;
+  animation: spin-right 128.7s linear infinite;
 }
 
 .uranus-spin {
-  animation: spin-right 68.7s linear infinite;
+  animation: spin-right 135.7s linear infinite;
 }
 
 .neptune-spin {
-  animation: spin-right 68.7s linear infinite;
+  animation: spin-right 169.7s linear infinite;
 }
