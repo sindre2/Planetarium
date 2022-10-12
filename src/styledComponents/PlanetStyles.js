@@ -3,48 +3,60 @@ import styled from "styled-components";
 export const PlanetContainer = styled.div`
   display: grid;
   height: 100%;
-  grid-template-rows: 100px 100px 100px 100px 100px 100px;
-  grid-template-columns: 34% 30% 25%;
+  width: 100%;
+  grid-template-rows: 40px auto auto auto auto 200px;
+  grid-template-columns: auto auto auto;
   grid-gap: 10px;
-  /* grid-template-columns:
-
-  "title title"
-  "image"
-  "image"
-  "image"
-  "image" 
-  "sidebar" 
-  "sidebar"
-  "sidebar"
-  "sidebar"; */
+  grid-template-areas:
+    "title title title"
+    "image image wiki"
+    "image image wiki"
+    "image image wiki"
+    "image image data"
+    "none none data";
 
   padding: 40px;
   background-color: blueviolet;
   & > * {
-    border: 2px solid red;
+    border: 2px solid cyan;
   }
   & > img {
-    grid-column: span 2;
-    object-fit: cover;
+    grid-area: image;
   }
-  & > h1 {
-    grid-column: span 3;
-    grid-row: span 1;
+  & > .planetTitle {
+    grid-area: title;
   }
   & > main {
-    grid-column: 2 / -1;
-    grid-row: 1 / 4;
+    grid-area: wiki;
   }
-  & > div {
-    grid-column: 2 / -1;
-    grid-row: 4 / -1;
+  & > .data {
+    grid-area: data;
   }
 `;
 
 export const PlanetSection = styled.section`
-  display: grid;
-  grid-template-rows: 50px;
-  border: 2px solid red;
+  height: 100%;
+  padding: 5px;
+  
+  & .data_Container{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  }
+
+  & .planet_Title{
+    text-align: center;
+  }
+  & .data_Text {
+    display: flex;
+    flex-direction: column;
+    padding: 0 3rem;
+  }
+  & .data_Number{
+    display: flex;
+    flex-direction: column;
+    
+  }
 `;
 
 export const PlanetTitle = styled.h1`
