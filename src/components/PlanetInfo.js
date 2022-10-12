@@ -4,6 +4,7 @@ import axios from "axios";
 import {
   PlanetContainer,
   PlanetSection,
+  PlanetTitle,
 } from "../styledComponents/PlanetStyles";
 
 export function PlanetInfo(props) {
@@ -26,14 +27,16 @@ export function PlanetInfo(props) {
   return (
     <>
       <PlanetContainer>
-        <h1>{planetInfo.englishName}</h1>
+        <PlanetTitle>{planetInfo.englishName}</PlanetTitle>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Jupiter_New_Horizons.jpg/320px-Jupiter_New_Horizons.jpg" />
         <main>{wikiText}</main>
         <PlanetSection>
           <div>
+            <h3>{planetInfo.englishName} data:</h3>
+          </div>
+          <div>
             Discovered: "
-            {planetInfo.discoveryDate
-              ? planetInfo.discoveryDate
-              : "unknown date"}
+            {planetInfo.discoveryDate ? planetInfo.discoveryDate: "unknown date"}
             " by "
             {planetInfo.discoveredBy ? planetInfo.discoveredBy : "unknown"}"
           </div>
@@ -45,7 +48,7 @@ export function PlanetInfo(props) {
           <div>
             Mass:{" "}
             {planetInfo.mass ? planetInfo.mass.massValue.toFixed(2) : "Loading"}{" "}
-            * 10
+            &#215; 10
             <sup>
               {planetInfo.mass ? planetInfo.mass.massExponent : "Loading"}
             </sup>{" "}
@@ -53,8 +56,8 @@ export function PlanetInfo(props) {
           </div>
           <div>
             Volume:{" "}
-            {planetInfo.vol ? planetInfo.vol.volValue.toFixed(2) : "Loading"} *
-            10
+            {planetInfo.vol ? planetInfo.vol.volValue.toFixed(2) : "Loading"}{" "}
+            &#215; 10
             <sup>{planetInfo.vol ? planetInfo.volExponent : "Loading"}</sup> km
             <sup>3</sup>
           </div>
