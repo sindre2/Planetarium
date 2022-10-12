@@ -9,7 +9,7 @@ export const theme = {
     link_state: "#69CFF8",
   },
   fonts: {
-    header: "",
-    text: "",
+    header: "Karla",
+    text: "inconsolata",
   },
 };
