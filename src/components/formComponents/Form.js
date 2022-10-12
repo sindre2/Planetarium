@@ -1,6 +1,12 @@
 import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
-import "./formstyle.css";
+import {
+  ContactButton,
+  ContactForm,
+  ContactInput,
+  ContactLabel,
+  TextInput,
+} from "./formStyles";
 
 function ErrorEl({ setError }) {
   return (
@@ -92,43 +98,43 @@ function Form() {
     }, 5000);
   }
   return (
-    <form ref={form} className="form" onSubmit={(e) => formHandler(e)}>
-      <label htmlFor="user_name">Name</label>
-      <input
+    <ContactForm ref={form} className="form" onSubmit={(e) => formHandler(e)}>
+      <ContactLabel htmlFor="user_name">Name</ContactLabel>
+      <ContactInput
         className="marginspace"
         id="user_name"
         placeholder="Please enter your name"
         name="user_name"
         onChange={(e) => handleChange(e)}
       />
-      <label htmlFor="user_email">Email</label>
-      <input
+      <ContactLabel htmlFor="user_email">Email</ContactLabel>
+      <ContactInput
         className="marginspace"
         id="user_email"
         placeholder="Please enter your email"
         name="user_email"
         onChange={(e) => handleChange(e)}
       />
-      <label htmlFor="phonenumber">Phone Nr</label>
-      <input
+      <ContactLabel htmlFor="phonenumber">Phone Nr</ContactLabel>
+      <ContactInput
         className="marginspace"
         id="user_phone"
         placeholder="Please enter your phone"
         name="user_phone"
         onChange={(e) => handleChange(e)}
       />
-      <label htmlFor="message"></label>
-      <textarea
+      <ContactLabel htmlFor="message"></ContactLabel>
+      <TextInput
         className="marginspace"
         id="message"
         placeholder="Please enter your Message"
         name="message"
         onChange={(e) => handleChange(e)}
-      ></textarea>
-      <button type="submit">Send Message</button>
+      ></TextInput>
+      <ContactButton type="submit">Send Message</ContactButton>
       {error ? <ErrorEl error={error} setError={setError} /> : null}
       {succes ? <Success setSucces={setSucces} /> : null}
-    </form>
+    </ContactForm>
   );
 }
 
