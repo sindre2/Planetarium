@@ -7,9 +7,10 @@ export const theme = {
     secondary: "",
     link: "",
     link_state: "#69CFF8",
+    nav_link_hover: "#607bff",
   },
   fonts: {
-    header: "",
-    text: "",
+    header: "Karla",
+    text: "inconsolata",
   },
 };
