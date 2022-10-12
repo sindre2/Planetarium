@@ -1,9 +1,11 @@
+
+import SolarSystem from "../../components/solarsystem/SolarSystem";
 const HomePage = () => {
   const pageName = "Homepage";
   return (
     <div>
-      <h1>{pageName}</h1>
-      <p>Test</p>
+      
+      <SolarSystem/>
     </div>
   );
 };
