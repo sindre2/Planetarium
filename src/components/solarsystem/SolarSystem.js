@@ -25,6 +25,7 @@ function SolarSystem() {
 
           <img
             id="earth"
+            alt=""
             src="https://raw.githubusercontent.com/everdimension-personal/codepen-assets/master/earth_small_150.jpg"
           />
         </div>
