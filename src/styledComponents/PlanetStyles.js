@@ -52,10 +52,15 @@ export const PlanetSection = styled.section`
     flex-direction: column;
     padding: 0 3rem;
   }
+  & .data_Text span {
+    margin-left: auto;
+    
+  }
   & .data_Number{
+    margin-left: 20px;
     display: flex;
     flex-direction: column;
-    
+
   }
 `;
 
