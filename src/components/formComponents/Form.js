@@ -9,6 +9,7 @@ import {
   ContactLabel,
   TextInput,
 } from "./formStyles";
+import { TEXT_AND_CONTENT } from "../../textAndContent/textAndConent";
 
 function ErrorEl({ setError }) {
   return (
@@ -34,6 +35,7 @@ function Success({ setSucces }) {
 }
 
 function Form() {
+  const formData = TEXT_AND_CONTENT.CONTACT_FORM;
   const [contactInfo, setContactInfo] = useState({
     user_name: "",
     user_email: "",
@@ -109,27 +111,27 @@ function Form() {
       className="form"
       onSubmit={(e) => formHandler(e)}
     >
-      <ContactLabel htmlFor="user_name">Name</ContactLabel>
+      <ContactLabel htmlFor="user_name">{formData.INPUT_ONE}</ContactLabel>
       <ContactInput
         className="marginspace"
         id="user_name"
-        placeholder="Please enter your name"
+        placeholder={"Please enter your " + formData.INPUT_ONE.toLowerCase()}
         name="user_name"
         onChange={(e) => handleChange(e)}
       />
-      <ContactLabel htmlFor="user_email">Email</ContactLabel>
+      <ContactLabel htmlFor="user_email">{formData.INPUT_TWO}</ContactLabel>
       <ContactInput
         className="marginspace"
         id="user_email"
-        placeholder="Please enter your email"
+        placeholder={"Please enter your " + formData.INPUT_TWO.toLowerCase()}
         name="user_email"
         onChange={(e) => handleChange(e)}
       />
-      <ContactLabel htmlFor="phonenumber">Phone Nr</ContactLabel>
+      <ContactLabel htmlFor="phonenumber">{formData.INPUT_THREE}</ContactLabel>
       <ContactInput
         className="marginspace"
         id="user_phone"
-        placeholder="Please enter your phone"
+        placeholder={"Please enter your " + formData.INPUT_THREE.toLowerCase()}
         name="user_phone"
         onChange={(e) => handleChange(e)}
       />
@@ -141,7 +143,7 @@ function Form() {
         name="message"
         onChange={(e) => handleChange(e)}
       ></TextInput>
-      <ContactButton type="submit">Send Message</ContactButton>
+      <ContactButton type="submit">{formData.BTN_TEXT}</ContactButton>
       {error ? <ErrorEl error={error} setError={setError} /> : null}
       {succes ? <Success setSucces={setSucces} /> : null}
     </ContactForm>
