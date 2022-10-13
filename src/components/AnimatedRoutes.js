@@ -13,8 +13,10 @@ import Neptune from "../pages/landingPage/Neptune";
 import Venus from "../pages/landingPage/Venus";
 import Contact from "../pages/landingPage/Contact";
 import RouteNotFound from "../pages/landingPage/404";
+import { TEXT_AND_CONTENT } from "../textAndContent/textAndConent";
 
 const AnimationRoutes = () => {
+  const navBar = TEXT_AND_CONTENT.NAVIGATION.NAVIGATION_BAR;
   const location = useLocation();
   return (
     <AnimatePresence>
@@ -22,15 +24,33 @@ const AnimationRoutes = () => {
         <Routes location={location} key={location.path}>
           <Route path="/" element={<Navigate to="/home" />} />
           <Route path="/home" element={<HomePage />} />
-          <Route path="/mercury" element={<Mercury />} />
-          <Route path="/venus" element={<Venus />} />
-          <Route path="/earth" element={<Earth />} />
-          <Route path="/mars" element={<Mars />} />
-          <Route path="/jupiter" element={<Jupiter />} />
-          <Route path="/saturn" element={<Saturn />} />
-          <Route path="/uranus" element={<Uranus />} />
-          <Route path="/neptune" element={<Neptune />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route
+            path={"/" + navBar.MERCURY.toLowerCase()}
+            element={<Mercury />}
+          />
+          <Route path={"/" + navBar.VENUS.toLowerCase()} element={<Venus />} />
+          <Route path={"/" + navBar.EARTH.toLowerCase()} element={<Earth />} />
+          <Route path={"/" + navBar.MARS.toLowerCase()} element={<Mars />} />
+          <Route
+            path={"/" + navBar.JUPITER.toLowerCase()}
+            element={<Jupiter />}
+          />
+          <Route
+            path={"/" + navBar.SATURN.toLowerCase()}
+            element={<Saturn />}
+          />
+          <Route
+            path={"/" + navBar.URANUS.toLowerCase()}
+            element={<Uranus />}
+          />
+          <Route
+            path={"/" + navBar.NEPTUNE.toLowerCase()}
+            element={<Neptune />}
+          />
+          <Route
+            path={"/" + navBar.CONTACT.toLowerCase()}
+            element={<Contact />}
+          />
           <Route path="*" element={<RouteNotFound />} />
         </Routes>
       </Wrapper>
