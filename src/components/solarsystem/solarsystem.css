@@ -1,12 +1,18 @@
+/* Original value refers to the height and width properties of the class/id. Every planet and moon has the orbit as parent. */
+/* Original value: 1300px */
 #maincontainer {
-  width: 1300px;
-  height: max-content;
+  aspect-ratio: 1;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+/* Original value: 1200px */
 .solar-system {
   position: relative;
-  width: 1200px;
-  height: 1200px;
+  width: 92.3%;
+  height: 92.3%;
   margin: auto;
   overflow: hidden;
 }
@@ -47,11 +53,14 @@ and planet size. And colors :) */
 #sun {
   /* Positions the top-left corner of the image to be *
 	/* in the middle of the box */
-  height: 200px;
-  width: 200px;
+  /* Original value: 200px */
+
+  width: 16.7%;
+  height: 16.7%;
+  aspect-ratio: 1;
   background-color: #fae20a;
-  margin-top: -100px;
-  margin-left: -100px;
+  margin-top: -8.3%;
+  margin-left: -8.3%;
   border-radius: 50%;
   box-shadow: 0 0 84px orange;
 }
@@ -60,156 +69,165 @@ and planet size. And colors :) */
   position: absolute;
   top: 0;
   left: 50%;
-  height: 50px;
-  width: 50px;
-  margin-left: -25px;
-  margin-top: -25px;
+  height: 10%;
+  width: 10%;
+  margin-left: -5%;
+  margin-top: -5%;
   border-radius: 50%;
   box-shadow: 0 0 34px #3a4385;
 }
 
+/* Original value: 500px */
 .earth-orbit,
 .earth-spin {
-  width: 500px;
-  height: 500px;
-  margin-left: -250px;
-  margin-top: -250px;
+  width: 44.7%;
+  height: 44.7%;
+  margin-left: -22.35%;
+  margin-top: -22.35%;
 }
 
 #moon {
-  margin-top: -6px;
-  margin-left: -6px;
-  height: 12px;
-  width: 12px;
+  margin-top: -6.7%;
+  margin-left: -6.7%;
+  height: 13.3%;
+  width: 13.3%;
   border-radius: 50%;
   background: white;
   box-shadow: 0 0 14px #3a4385;
 }
 .moon-orbit,
 .moon-spin {
-  height: 90px;
-  width: 90px;
-  margin-top: -45px;
-  margin-left: -45px;
+  height: 18%;
+  width: 18%;
+  margin-top: -9%;
+  margin-left: -9%;
   border-color: #447;
 }
 
 #venus {
-  margin-top: -20px;
-  margin-left: -20px;
-  height: 40px;
-  width: 40px;
+  margin-top: -5.4%;
+  margin-left: -5.4%;
+  height: 10.8%;
+  width: 10.8%;
   background-color: #3498db;
   box-shadow: 0 0 34px #3a4385;
 }
+
+/* Original value: 370px */
 .venus-orbit,
 .venus-spin {
-  margin-top: -185px;
-  margin-left: -185px;
-  width: 370px;
-  height: 370px;
+  margin-top: -15.4%;
+  margin-left: -15.4%;
+  width: 30.8%;
+  height: 30.8%;
 }
 
 #mercury {
-  margin-top: -13.5px;
-  margin-left: -13.5px;
-  height: 25px;
-  width: 25px;
+  margin-top: -4.8%;
+  margin-left: -4.8%;
+  height: 8.9%;
+  width: 8.9%;
   background-color: #a65e22;
   /* box-shadow: 0 0 34px #3a4385; */
 }
 
+/* Original value: 280px */
 .mercury-orbit,
 .mercury-spin {
-  width: 280px;
-  height: 280px;
-  margin-left: -140px;
-  margin-top: -140px;
+  width: 23.3%;
+  height: 23.3%;
+  margin-left: -11.7%;
+  margin-top: -11.7%;
 }
 
 #mars {
-  margin-top: -16px;
-  margin-left: -16px;
-  height: 32px;
-  width: 32px;
+  margin-top: -2.29%;
+  margin-left: -2.29%;
+  height: 4.57%;
+  width: 4.57%;
   background-color: #863222;
   box-shadow: 0 0 14px #a64232;
 }
 
+/* Original value: 700px */
 .mars-orbit,
 .mars-spin {
-  width: 700px;
-  height: 700px;
-  margin-left: -350px;
-  margin-top: -350px;
+  width: 58.3%;
+  height: 58.3%;
+  margin-left: -29.17%;
+  margin-top: -29.17%;
 }
 
 #jupiter {
-  margin-top: -16px;
-  margin-left: -16px;
-  height: 32px;
-  width: 32px;
+  margin-top: -2%;
+  margin-left: -2%;
+  height: 4%;
+  width: 4%;
   background-color: beige;
   box-shadow: 0 0 14px #a64232;
 }
 
+/* Original value: 800px */
 .jupiter-orbit,
 .jupiter-spin {
-  width: 800px;
-  height: 800px;
-  margin-left: -400px;
-  margin-top: -400px;
+  width: 66.7%;
+  height: 66.7%;
+  margin-left: -33.3%;
+  margin-top: -33.3%;
 }
 
 #saturn {
-  margin-top: -16px;
-  margin-left: -16px;
-  height: 32px;
-  width: 32px;
+  margin-top: -1.78%;
+  margin-left: -1.78%;
+  height: 3.56%;
+  width: 3.56%;
   background-color: gray;
   box-shadow: 0 0 14px #a64232;
 }
 
+/* Original value: 900 px */
 .saturn-orbit,
 .saturn-spin {
-  width: 900px;
-  height: 900px;
-  margin-left: -450px;
-  margin-top: -450px;
+  width: 75%;
+  height: 75%;
+  margin-left: -37.5%;
+  margin-top: -37.5%;
 }
 
 #uranus {
-  margin-top: -16px;
-  margin-left: -16px;
-  height: 32px;
-  width: 32px;
+  margin-top: -1.6%;
+  margin-left: -1.6%;
+  height: 3.2%;
+  width: 3.2%;
   background-color: rgb(70, 67, 67);
   box-shadow: 0 0 14px #424141;
 }
 
+/* Original value: 1000px */
 .uranus-orbit,
 .uranus-spin {
-  width: 1000px;
-  height: 1000px;
-  margin-left: -500px;
-  margin-top: -500px;
+  width: 83.3%;
+  height: 83.3%;
+  margin-left: -41.67%;
+  margin-top: -41.67%;
 }
 
 #neptune {
-  margin-top: -16px;
-  margin-left: -16px;
-  height: 32px;
-  width: 32px;
+  margin-top: -1.45%;
+  margin-left: -1.45%;
+  height: 2.9%;
+  width: 2.9%;
   background-color: rgb(35, 92, 179);
   box-shadow: 0 0 14px #41ebe2;
 }
 
+/* Original value: 1100px */
 .neptune-orbit,
 .neptune-spin {
-  width: 1100px;
-  height: 1100px;
-  margin-left: -550px;
-  margin-top: -550px;
+  width: 91.7%;
+  height: 91.7%;
+  margin-left: -45.83%;
+  margin-top: -45.83%;
 }
 
 /* Spinning animations */
