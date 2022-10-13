@@ -22,6 +22,7 @@ export const PlanetContainer = styled.div`
   border: 2px solid ${(props)=> props.theme.colors.nav_link_hover};
   & > img {
     grid-area: image;
+    width: 300px;
   }
   & > .planet_Title {
     grid-area: title;
