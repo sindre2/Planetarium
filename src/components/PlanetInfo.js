@@ -6,6 +6,7 @@ import {
   PlanetSection,
   PlanetTitle,
 } from "../styledComponents/PlanetStyles";
+import { TEXT_AND_CONTENT } from "../textAndContent/textAndConent";
 
 export function PlanetInfo(props) {
   const { planets } = useContext(PlanetContext);
@@ -30,7 +31,7 @@ export function PlanetInfo(props) {
         <PlanetTitle className="planet_Title">
           {planetInfo.englishName}
         </PlanetTitle>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Jupiter_New_Horizons.jpg/320px-Jupiter_New_Horizons.jpg" />
+        <img src={TEXT_AND_CONTENT.PLANET_INFO.IMG[props.index]} />
         <main>{wikiText}</main>
         <PlanetSection className="data">
           <div className="planet_Title">
@@ -149,71 +150,6 @@ export function PlanetInfo(props) {
                 </tr>
               </tbody>
             </table>
-            {/* <table className="data_Number">
-            <tr>
-              "
-              {planetInfo.discoveryDate
-                ? planetInfo.discoveryDate
-                : "unknown date"}
-              " by "
-              {planetInfo.discoveredBy ? planetInfo.discoveredBy : "unknown"}"
-            </tr>
-            <tr>
-              {planetInfo.gravity ? planetInfo.gravity.toFixed(2) : "Loading"}{" "}
-              m/s
-              <sup>2</sup>
-            </tr>
-            <tr>
-              {planetInfo.mass
-                ? planetInfo.mass.massValue.toFixed(2)
-                : "Loading"}
-              &#215; 10
-              <sup>
-                {planetInfo.mass ? planetInfo.mass.massExponent : "Loading"}
-                kg
-              </sup>
-            </tr>
-            <tr>
-              {planetInfo.vol ? planetInfo.vol.volValue.toFixed(2) : "Loading"}{" "}
-              &#215; 10
-              <sup>
-                {planetInfo.vol ? planetInfo.volExponent : "Loading"}
-              </sup>{" "}
-              km
-              <sup>3</sup>
-            </tr>
-            <tr>
-              {planetInfo.escape
-                ? planetInfo.escape.toExponential(2)
-                : "Loading"}{" "}
-              km
-            </tr>
-            <tr>
-              {tempDecimal} <sup>o</sup>C
-            </tr>
-            <tr>
-              {planetInfo.meanRadius ? planetInfo.meanRadius : "Loading"} km
-            </tr>
-            <tr>
-              {planetInfo.polarRadius
-                ? planetInfo.polarRadius.toExponential(2)
-                : "Loading"}
-              km
-            </tr>
-            <tr>
-              {planetInfo.perihelion
-                ? planetInfo.perihelion.toExponential(2)
-                : "Loading"}{" "}
-              km
-            </tr>
-            <tr>
-              {planetInfo.aphelion
-                ? planetInfo.aphelion.toExponential(2)
-                : "Loading"}{" "}
-              km
-            </tr>
-            <tr>{planetInfo.moons ? planetInfo.moons.length : "No moons"}</tr>
-          </table> */}
           </div>
         </PlanetSection>
       </PlanetContainer>
