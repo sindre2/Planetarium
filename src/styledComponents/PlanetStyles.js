@@ -9,17 +9,17 @@ export const PlanetContainer = styled.div`
   grid-gap: 10px;
   z-index: 100;
   grid-template-areas:
-    "title title title"
+    ". . title"
     "image image wiki"
     "image image wiki"
     "image image wiki"
     "image image data"
-    "none none data";
+    ". . data";
 
   padding: 40px;
-  background-color: rgba(0,0,0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 15px;
-  border: 2px solid ${(props)=> props.theme.colors.nav_link_hover};
+  border: 2px solid ${(props) => props.theme.colors.nav_link_hover};
   & > img {
     grid-area: image;
     width: 300px;
@@ -33,6 +33,7 @@ export const PlanetContainer = styled.div`
   }
   & > main {
     grid-area: wiki;
+    padding-left: 3rem;
   }
   & > .data {
     grid-area: data;
@@ -41,7 +42,6 @@ export const PlanetContainer = styled.div`
 
 export const PlanetSection = styled.section`
   height: 100%;
-  padding: 5px;
 
   & .data_Container {
     display: flex;
@@ -50,7 +50,8 @@ export const PlanetSection = styled.section`
   }
 
   & .planet_Title {
-    text-align: center;
+    text-align: left;
+    padding-left: 3rem;
   }
   & .data_Text {
     padding: 0 3rem;
