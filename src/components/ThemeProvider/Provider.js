@@ -19,6 +19,7 @@ const GlobalStyle = createGlobalStyle`
         font-size: 1rem;
         color: ${(props) => props.theme.colors.white};
         background: ${(props) => props.theme.colors.bg} ;
+        background-image: linear-gradient( 99.9deg, rgba(27,24,31,1) 21.2%, rgba(50,4,89,1) 84.8% );
     }
     a {
         text-decoration: none;
