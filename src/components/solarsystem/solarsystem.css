@@ -1,11 +1,12 @@
+/* Solar system animation from "https://codepen.io/everdimension/pen/DwREaP" */
+
 /* Original value refers to the height and width properties of the class/id. Every planet and moon has the orbit as parent. */
 /* Original value: 1300px */
+
 #maincontainer {
   aspect-ratio: 1;
   height: 80vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-left: 40%;
 }
 
 /* Original value: 1200px */
