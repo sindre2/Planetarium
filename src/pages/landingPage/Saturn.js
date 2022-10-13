@@ -1,10 +1,15 @@
+import { motion } from "framer-motion";
 import { PlanetInfo } from "../../components/PlanetInfo";
 
 const Saturn = () => {
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <PlanetInfo index={5} name={"Saturn"} />
-    </div>
+    </motion.div>
   );
 };
 

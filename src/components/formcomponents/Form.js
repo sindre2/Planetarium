@@ -1,4 +1,6 @@
 import React, { useState, useRef } from "react";
+import { motion } from "framer-motion";
+
 import emailjs from "@emailjs/browser";
 import {
   ContactButton,
@@ -98,7 +100,15 @@ function Form() {
     }, 5000);
   }
   return (
-    <ContactForm ref={form} className="form" onSubmit={(e) => formHandler(e)}>
+    <ContactForm
+      as={motion.form}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      ref={form}
+      className="form"
+      onSubmit={(e) => formHandler(e)}
+    >
       <ContactLabel htmlFor="user_name">Name</ContactLabel>
       <ContactInput
         className="marginspace"
