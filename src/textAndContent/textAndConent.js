@@ -1,12 +1,12 @@
-import earth from "../img/earth";
-import jupiter from "../img/jupiter";
-import mars from "../img/mars";
-import mercury from "../img/mercury";
-import neptune from "../img/neptune";
-import saturn from "../img/saturn";
-import uranus from "../img/uranus";
-import venus from "../img/venus";
-import sun from "../img/sun";
+import earth from "../img/earth.svg";
+import jupiter from "../img/jupiter.svg";
+import mars from "../img/mars.svg";
+import mercury from "../img/mercury.svg";
+import neptune from "../img/neptune.svg";
+import saturn from "../img/saturn.svg";
+import uranus from "../img/uranus.svg";
+import venus from "../img/venus.svg";
+import sun from "../img/sun.png";
 
 export const TEXT_AND_CONTENT = {
   PLANET_INFO: {
@@ -20,20 +20,10 @@ export const TEXT_AND_CONTENT = {
       EARTH: "Earth",
       MARS: "Mars",
       JUPITER: "Jupiter",
+      SATURN: "Saturn",
       URANUS: "Uranus",
       NEPTUNE: "Neptune",
       CONTACT: "Contact",
-    },
-    NAVIGATION_ROUTES: {
-      PLANETARIUM: "/" + TEXT_AND_CONTENT.NAVIGATION.PLANETARIUM,
-      MERCURY: "/" + TEXT_AND_CONTENT.NAVIGATION.MERCURY,
-      VENUS: "/" + TEXT_AND_CONTENT.NAVIGATION.VENUS,
-      EARTH: "/" + TEXT_AND_CONTENT.NAVIGATION.EARTH,
-      MARS: "/" + TEXT_AND_CONTENT.NAVIGATION.MARS,
-      JUPITER: "/" + TEXT_AND_CONTENT.NAVIGATION.JUPITER,
-      URANUS: "/" + TEXT_AND_CONTENT.NAVIGATION.URANUS,
-      NEPTUNE: "/" + TEXT_AND_CONTENT.NAVIGATION.NEPTUNE,
-      CONTACT: "/" + TEXT_AND_CONTENT.NAVIGATION.CONTACT,
     },
   },
   CONTACT_FORM: {
