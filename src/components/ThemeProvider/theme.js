@@ -7,7 +7,7 @@ export const theme = {
     secondary: "",
     link: "",
     link_state: "#69CFF8",
-    nav_link_hover: "#607bff",
+    nav_link_hover: "#ab00fd",
   },
   fonts: {
     header: "Karla",
