@@ -10,7 +10,18 @@ import sun from "../img/sun.png";
 
 export const TEXT_AND_CONTENT = {
   PLANET_INFO: {
-    IMG: [mercury, venus, earth, mars, jupiter, saturn, uranus, neptune, sun],
+    IMG: [uranus, neptune, jupiter, mars, mercury, saturn, earth, venus, sun],
+    ALT: [
+      "Uranus",
+      "Neptune",
+      "Jupiter",
+      "Mars",
+      "Mercury",
+      "Saturn",
+      "Earth",
+      "Venus",
+      "Sun",
+    ],
   },
   NAVIGATION: {
     NAVIGATION_BAR: {
