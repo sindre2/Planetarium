@@ -10,11 +10,11 @@ export const PlanetContainer = styled.div`
   z-index: 100;
   grid-template-areas:
     ". . title"
-    "image image wiki"
+    ". . wiki"
     "image image wiki"
     "image image wiki"
     "image image data"
-    ". . data";
+    "image image data";
 
   padding: 40px;
   background-color: rgba(0, 0, 0, 0.5);
@@ -23,6 +23,7 @@ export const PlanetContainer = styled.div`
   & > img {
     grid-area: image;
     width: 300px;
+    padding-top: 10px;
   }
   & > .planet_Title {
     grid-area: title;

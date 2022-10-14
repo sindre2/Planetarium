@@ -1,4 +1,5 @@
 import React from "react";
+import { TEXT_AND_CONTENT } from "../../textAndContent/textAndConent";
 import "./solarsystem.css";
 function SolarSystem() {
   return (
@@ -8,12 +9,20 @@ function SolarSystem() {
 
         <div className="orbit mercury-orbit"></div>
         <div className="mercury-spin">
-          <div id="mercury"></div>
+        <img
+            id="mercury"
+            alt="mercury"
+            src={TEXT_AND_CONTENT.PLANET_INFO.IMG[4]}
+          />
         </div>
 
         <div className="orbit venus-orbit"></div>
         <div className="venus-spin">
-          <div id="venus"></div>
+          <img
+            id="venus"
+            alt="venus"
+            src={TEXT_AND_CONTENT.PLANET_INFO.IMG[7]}
+          />
         </div>
 
         <div className="orbit earth-orbit"></div>
@@ -26,29 +35,49 @@ function SolarSystem() {
           <img
             id="earth"
             alt="earth"
-            src="https://raw.githubusercontent.com/everdimension-personal/codepen-assets/master/earth_small_150.jpg"
+            src={TEXT_AND_CONTENT.PLANET_INFO.IMG[6]}
           />
         </div>
 
         <div className="orbit mars-orbit"></div>
         <div className="mars-spin">
-          <div id="mars"></div>
+          <img
+            id="mars"
+            alt="mars"
+            src={TEXT_AND_CONTENT.PLANET_INFO.IMG[3]}
+          />
         </div>
         <div className="orbit jupiter-orbit"></div>
         <div className="jupiter-spin">
-          <div id="jupiter"></div>
+        <img
+            id="jupiter"
+            alt="jupiter"
+            src={TEXT_AND_CONTENT.PLANET_INFO.IMG[2]}
+          />
         </div>
         <div className="orbit saturn-orbit"></div>
         <div className="saturn-spin">
-          <div id="saturn"></div>
+        <img
+            id="saturn"
+            alt="saturn"
+            src={TEXT_AND_CONTENT.PLANET_INFO.IMG[5]}
+          />
         </div>
         <div className="orbit uranus-orbit"></div>
         <div className="uranus-spin">
-          <div id="uranus"></div>
+        <img
+            id="uranus"
+            alt="uranus"
+            src={TEXT_AND_CONTENT.PLANET_INFO.IMG[0]}
+          />
         </div>
         <div className="orbit neptune-orbit"></div>
         <div className="neptune-spin">
-          <div id="neptune"></div>
+        <img
+            id="neptune"
+            alt="neptune"
+            src={TEXT_AND_CONTENT.PLANET_INFO.IMG[1]}
+          />
         </div>
       </div>
     </div>
