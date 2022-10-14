@@ -8,14 +8,16 @@ import {
 } from "../styledComponents/PlanetStyles";
 import { TEXT_AND_CONTENT } from "../textAndContent/textAndConent";
 
+//Rendering the information on planets with provided properties in the function. This grants access to the information from the APIs.
 export function PlanetInfo(props) {
   const { planets } = useContext(PlanetContext);
   const [wiki, setWiki] = useState();
-  const planetInfo = planets ? planets.data.bodies[props.index] : "Loading";
-  const wikiText = wiki ? wiki.data.extract : "Loading";
-  const tempCelcius = planetInfo.avgTemp - 273.15;
+  const planetInfo = planets ? planets.data.bodies[props.index] : "Loading"; //If the data will not load the placeholder "Loading" will be input instead.
+  const wikiText = wiki ? wiki.data.extract : "Loading"; //If the data will not load wikipedia, a placeholder "Loading" will be input instead.
+  const tempCelcius = planetInfo.avgTemp - 273.15; //Converting temperatur from Kelvin to Celcius.
   const tempDecimal = Math.round(tempCelcius);
 
+  //Axios call to get the summary on said planet from wikipedia. Wikipedia loads seperatly from the first axios call since it is of higher importance. If Wikipedia is unavaible a placeholder will be set instead.
   const getWiki = () => {
     axios
       .get(`https://en.wikipedia.org/api/rest_v1/page/summary/${props.name}`)
@@ -31,7 +33,10 @@ export function PlanetInfo(props) {
         <PlanetTitle className="planet_Title">
           {planetInfo.englishName}
         </PlanetTitle>
-        <img src={TEXT_AND_CONTENT.PLANET_INFO.IMG[props.index]} />
+        <img
+          src={TEXT_AND_CONTENT.PLANET_INFO.IMG[props.index]}
+          alt={TEXT_AND_CONTENT.PLANET_INFO.ALT[props.index]}
+        />
         <main>{wikiText}</main>
         <PlanetSection className="data">
           <div className="planet_Title">
@@ -60,6 +65,9 @@ export function PlanetInfo(props) {
                     {planetInfo.gravity
                       ? planetInfo.gravity.toFixed(2)
                       : "Loading"}{" "}
+                    {
+                      // Extra ternery operators was added as API had difficulty loading in the information for gravity seperatly from planets.data.bodies[props.index]
+                    }
                     m/s
                     <sup>2</sup>
                   </td>
