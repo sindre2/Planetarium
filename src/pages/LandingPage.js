@@ -4,7 +4,8 @@ import Background from "../components/Background/BackgroundParticles";
 import Navbar from "../components/Navbar/Navbar";
 import AnimationRoutes from "../components/AnimatedRoutes";
 import { PlanetContext } from "../components/PlanetContext";
-
+//Axios call to api "le-systeme-solaire.net" for planet data. It filters out everything that is not a planet in our solar system.
+//The useEffect is set to load it when you first open the page thus having early access to the data object, hopefully reducing load times. The information is stored via a "PlanetContext" to avoid potential prop-drilling.
 const LandingPage = () => {
   const [planets, setPlanets] = useState();
   const planetData = () => {
