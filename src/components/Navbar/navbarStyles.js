@@ -7,11 +7,16 @@ export const Nav = styled.nav`
   text-align: center;
   height: 100px;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  transition: font-size 300ms ease;
+  @media ${devices.laptop} {
+    font-size: 1.1rem;
+  }
   @media ${devices.tablet} {
     height: fit-content;
-    max-width: 800px;
+    font-size: 2rem;
     flex-direction: column;
   }
 `;
@@ -22,7 +27,6 @@ export const NavList = styled.ul`
   display: flex;
   height: 100%;
   @media ${devices.tablet} {
-    max-width: 800px;
     flex-direction: column;
   }
   & li {
@@ -63,7 +67,6 @@ export const NavItems = styled(NavLink)`
   background: none;
   border: none;
   border-bottom: 3px solid transparent;
-  font-size: 1.5rem;
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
