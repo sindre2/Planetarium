@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { devices } from "../devices";
 
 export const PlanetContainer = styled.div`
   display: grid;
@@ -39,6 +40,36 @@ export const PlanetContainer = styled.div`
   & > .data {
     grid-area: data;
   }
+
+  @media ${devices.laptopL} {
+    & td {
+      border-bottom: 2px solid white;
+    }
+  }
+
+  @media ${devices.tablet} {
+    padding: 20px;
+    grid-template-rows: 40px auto auto auto auto fit-content;
+    grid-template-columns: auto auto;
+    grid-template-areas:
+      "title title"
+      "image image"
+      "image image"
+      "wiki  wiki"
+      "data data"
+      "data data";
+    justify-content: center;
+
+    & > main {
+      padding-left: 0;
+    }
+
+    & > img {
+      width: 200px;
+      padding-top: 5px;
+      margin: 0 auto;
+    }
+  }
 `;
 
 export const PlanetSection = styled.section`
@@ -65,6 +96,12 @@ export const PlanetSection = styled.section`
     list-style-type: none;
     padding: 0;
     line-height: 1rem;
+  }
+
+  @media ${devices.tablet} {
+    & td {
+      border-bottom: 2px solid white;
+    }
   }
 `;
 
