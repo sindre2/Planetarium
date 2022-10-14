@@ -5,8 +5,8 @@ import {
   PlanetContainer,
   PlanetSection,
   PlanetTitle,
-} from "../styledComponents/PlanetStyles";
-import { TEXT_AND_CONTENT } from "../textAndContent/textAndConent";
+} from "./PlanetStyles";
+import { TEXT_AND_CONTENT } from "../../textAndContent/textAndConent";
 
 //Rendering the information on planets with provided properties in the function. This grants access to the information from the APIs.
 export function PlanetInfo(props) {
@@ -66,7 +66,7 @@ export function PlanetInfo(props) {
                       ? planetInfo.gravity.toFixed(2)
                       : "Loading"}{" "}
                     {
-                      // Extra ternery operators was added as API had difficulty loading in the information for gravity seperatly from planets.data.bodies[props.index]
+                      // Extra ternery operators were added as API had difficulty loading in the information for gravity seperatly from planets.data.bodies[props.index]
                     }
                     m/s
                     <sup>2</sup>
