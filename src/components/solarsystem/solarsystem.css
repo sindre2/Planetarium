@@ -3,9 +3,6 @@
 /* Original value refers to the height and width properties of the class/id. Every planet and moon has the orbit as parent. */
 /* Original value: 1300px */
 
-
-
-
 /* STARTPUNKT */
 
 #maincontainer {
@@ -20,6 +17,9 @@
   height: 92.3%;
   margin: auto;
   overflow: hidden;
+}
+.solar-system img::selection {
+  background-color: transparent;
 }
 
 /* Some positioning rules that are common for all objects */
@@ -73,7 +73,6 @@
 .orbit + div img {
   border-radius: 50%;
 }
-
 
 /* Individual objects rules. They are pretty much the same for 
 all objects and basically only vary in orbit size 
