@@ -9,8 +9,8 @@ export const PlanetContainer = styled.div`
   grid-gap: 10px;
   z-index: 100;
   grid-template-areas:
-    ". . title"
-    ". . wiki"
+    ".     .     title"
+    ".     .     wiki"
     "image image wiki"
     "image image wiki"
     "image image data"
