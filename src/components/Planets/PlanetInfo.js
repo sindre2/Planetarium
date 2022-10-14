@@ -5,8 +5,8 @@ import {
   PlanetContainer,
   PlanetSection,
   PlanetTitle,
-} from "../styledComponents/PlanetStyles";
-import { TEXT_AND_CONTENT } from "../textAndContent/textAndConent";
+} from "./PlanetStyles";
+import { TEXT_AND_CONTENT } from "../../textAndContent/textAndConent";
 
 //Rendering the information on planets with provided properties in the function. This grants access to the information from the APIs.
 export function PlanetInfo(props) {

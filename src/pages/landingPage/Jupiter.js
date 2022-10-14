@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { PlanetInfo } from "../../components/PlanetInfo";
+import { PlanetInfo } from "../../components/Planets/PlanetInfo";
 
 const Jupiter = () => {
   return (
