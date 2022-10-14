@@ -1,3 +1,4 @@
+//Config for stars background
 export const particlesConfig = {
   fullscreen: {
     enable: true,
