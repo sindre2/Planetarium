@@ -43,7 +43,7 @@ export const PlanetContainer = styled.div`
 
   @media ${devices.laptopL} {
     & td {
-      border-bottom: 2px solid white;
+      border-bottom: 1px solid ${(props) => props.theme.colors.white};
     }
   }
 
@@ -100,7 +100,7 @@ export const PlanetSection = styled.section`
 
   @media ${devices.tablet} {
     & td {
-      border-bottom: 2px solid white;
+      border-bottom: 1px solid ${(props) => props.theme.colors.white};
     }
   }
 `;
