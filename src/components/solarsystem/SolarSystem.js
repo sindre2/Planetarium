@@ -1,6 +1,9 @@
 import React from "react";
 import { TEXT_AND_CONTENT } from "../../textAndContent/textAndConent";
 import "./solarsystem.css";
+
+/* Solar system animation from "https://codepen.io/everdimension/pen/DwREaP" */
+
 function SolarSystem() {
   return (
     <div id="maincontainer">
@@ -9,7 +12,7 @@ function SolarSystem() {
 
         <div className="orbit mercury-orbit"></div>
         <div className="mercury-spin">
-        <img
+          <img
             id="mercury"
             alt="mercury"
             src={TEXT_AND_CONTENT.PLANET_INFO.IMG[4]}
@@ -41,15 +44,11 @@ function SolarSystem() {
 
         <div className="orbit mars-orbit"></div>
         <div className="mars-spin">
-          <img
-            id="mars"
-            alt="mars"
-            src={TEXT_AND_CONTENT.PLANET_INFO.IMG[3]}
-          />
+          <img id="mars" alt="mars" src={TEXT_AND_CONTENT.PLANET_INFO.IMG[3]} />
         </div>
         <div className="orbit jupiter-orbit"></div>
         <div className="jupiter-spin">
-        <img
+          <img
             id="jupiter"
             alt="jupiter"
             src={TEXT_AND_CONTENT.PLANET_INFO.IMG[2]}
@@ -57,7 +56,7 @@ function SolarSystem() {
         </div>
         <div className="orbit saturn-orbit"></div>
         <div className="saturn-spin">
-        <img
+          <img
             id="saturn"
             alt="saturn"
             src={TEXT_AND_CONTENT.PLANET_INFO.IMG[5]}
@@ -65,7 +64,7 @@ function SolarSystem() {
         </div>
         <div className="orbit uranus-orbit"></div>
         <div className="uranus-spin">
-        <img
+          <img
             id="uranus"
             alt="uranus"
             src={TEXT_AND_CONTENT.PLANET_INFO.IMG[0]}
@@ -73,7 +72,7 @@ function SolarSystem() {
         </div>
         <div className="orbit neptune-orbit"></div>
         <div className="neptune-spin">
-        <img
+          <img
             id="neptune"
             alt="neptune"
             src={TEXT_AND_CONTENT.PLANET_INFO.IMG[1]}

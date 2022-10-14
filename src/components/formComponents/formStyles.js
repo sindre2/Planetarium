@@ -72,7 +72,7 @@ export const TextInput = styled.textarea`
   padding: 5px;
   border-radius: 5px;
   margin-bottom: 2rem;
-  border: 3px solid black;
+  border: 3px solid ${(props) => props.theme.colors.dark};
   outline: none;
   transition: border 350ms ease-in-out;
   &:focus {
