@@ -10,7 +10,7 @@
     <a href="https://github.com/aleksander-kodehode/planetarium/tree/main/src"><strong>Check out the files »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    <a href="https://aleksander-kodehode.github.io/planetarium">View Demo</a>
     ·
     <a href="https://github.com/aleksander-kodehode/planetarium/issues">Report Bug</a>
   </p>
@@ -93,6 +93,15 @@ To view or edit this project on your personal computer, just clone the repo and 
    ```sh
    npm start
    ```
+
+Note: One of the packages in this repo is gh-pages, so if you run:
+
+```sh
+   npm run deploy
+```
+
+NPM will run the `predeploy` and `deploy` scripts defined in `package.json`, which will deploy the site to Github Pages.
+
    <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGMENTS -->
