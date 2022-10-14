@@ -8,6 +8,7 @@ import uranus from "../img/uranus.svg";
 import venus from "../img/venus.svg";
 import sun from "../img/sun.png";
 
+//Object that contains images and text used across the site
 export const TEXT_AND_CONTENT = {
   PLANET_INFO: {
     IMG: [uranus, neptune, jupiter, mars, mercury, saturn, earth, venus, sun],

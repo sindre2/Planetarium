@@ -1,6 +1,6 @@
 import { ThemeProvider, createGlobalStyle } from "styled-components";
 import { theme } from "./theme";
-
+//GlobalStyle component from styled-components, used instead of index.css
 const GlobalStyle = createGlobalStyle`
     * {
         box-sizing: border-box;
@@ -39,7 +39,7 @@ const GlobalStyle = createGlobalStyle`
           props.theme.colors.nav_link_hover};
     }
     `;
-
+//Theme provide that allows easy changes to the sites colors, fonts, font-sizes etc.
 const Provider = ({ children }) => {
   return (
     <ThemeProvider theme={theme}>
