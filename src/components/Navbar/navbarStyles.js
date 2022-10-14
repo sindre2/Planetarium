@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
-
+import { devices } from "../devices";
 export const Nav = styled.nav`
   width: 100%;
   font-size: 1.5em;
@@ -9,6 +9,11 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: space-around;
   align-items: center;
+  @media ${devices.tablet} {
+    height: fit-content;
+    max-width: 800px;
+    flex-direction: column;
+  }
 `;
 export const NavList = styled.ul`
   list-style: none;
@@ -16,6 +21,10 @@ export const NavList = styled.ul`
   padding: 0;
   display: flex;
   height: 100%;
+  @media ${devices.tablet} {
+    max-width: 800px;
+    flex-direction: column;
+  }
   & li {
     height: 100%;
     margin-right: 0.625rem;
@@ -37,6 +46,12 @@ export const NavList = styled.ul`
 export const NavListMain = styled(NavList)`
   min-width: 50%;
   justify-content: space-around;
+  @media ${devices.tablet} {
+    min-width: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 export const NavItems = styled(NavLink)`
   font-family: ${(props) => props.theme.fonts.header}, sans-serif;

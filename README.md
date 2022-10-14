@@ -16,7 +16,7 @@
   </p>
 </div>
 <!-- TABLE OF CONTENTS -->
-<details>
+<details id="readme-top">
   <summary>Table of Contents</summary>
   <ol>
     <li>
