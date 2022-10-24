@@ -1,6 +1,6 @@
 <br />
 <div align="center">
-  <a href="https://github.com/aleksander-kodehode/planetarium">
+  <a href="https://github.com/aleksander-kodehode/planetarium" target="_blank">
     <img src="src/img/readme/logo.png" alt="Logo">
   </a>
 <h3 align="center">Planetarium</h3>
