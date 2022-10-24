@@ -10,7 +10,7 @@
     <a href="https://github.com/aleksander-kodehode/planetarium/tree/main/src"><strong>Check out the files »</strong></a>
     <br />
     <br />
-    <a href="https://aleksander-kodehode.github.io/planetarium">View Demo</a>
+    <a href="https://aleksander-kodehode.github.io/planetarium" target="_blank">View Demo</a>
     ·
     <a href="https://github.com/aleksander-kodehode/planetarium/issues">Report Bug</a>
   </p>
