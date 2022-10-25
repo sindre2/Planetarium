@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/Planetarium/static/css/main.6a3173e3.css",
+    "main.js": "/Planetarium/static/js/main.8a7dbea3.js",
+    "static/js/787.c0b33534.chunk.js": "/Planetarium/static/js/787.c0b33534.chunk.js",
+    "static/media/404.svg": "/Planetarium/static/media/404.836aeddbfdab4d3dd668bdbcc8ce9324.svg",
+    "static/media/inconsolata-all-400-normal.woff": "/Planetarium/static/media/inconsolata-all-400-normal.8a5891d9c3ab8d0010d2.woff",
+    "static/media/karla-all-700-normal.woff": "/Planetarium/static/media/karla-all-700-normal.a779a755f35743efa050.woff",
+    "static/media/astronaut.svg": "/Planetarium/static/media/astronaut.110ff7cb9d9b085eb76d948e4e0cc32c.svg",
+    "static/media/inconsolata-latin-400-normal.woff2": "/Planetarium/static/media/inconsolata-latin-400-normal.0b4b1c36297f2da1c3ac.woff2",
+    "static/media/inconsolata-latin-ext-400-normal.woff2": "/Planetarium/static/media/inconsolata-latin-ext-400-normal.d6fa24cb43a1cbc22abc.woff2",
+    "static/media/sun.png": "/Planetarium/static/media/sun.4d9f62a1f20a38562499.png",
+    "static/media/karla-latin-700-normal.woff2": "/Planetarium/static/media/karla-latin-700-normal.7e0b881d89bb036cdc7c.woff2",
+    "static/media/inconsolata-vietnamese-400-normal.woff2": "/Planetarium/static/media/inconsolata-vietnamese-400-normal.9577afbe03dcb6ba51df.woff2",
+    "static/media/earth.svg": "/Planetarium/static/media/earth.4d12af96d901006c0b9499208a32daf6.svg",
+    "static/media/jupiter.svg": "/Planetarium/static/media/jupiter.b1d0956b70a8ccb39f171a258ccd98fd.svg",
+    "static/media/karla-latin-ext-700-normal.woff2": "/Planetarium/static/media/karla-latin-ext-700-normal.d073cd1b0f8a30a2f619.woff2",
+    "static/media/uranus.svg": "/Planetarium/static/media/uranus.e91b297f96590dd142495611a1207397.svg",
+    "static/media/neptune.svg": "/Planetarium/static/media/neptune.af32296149ca9824ac1aa92201a6be37.svg",
+    "static/media/saturn.svg": "/Planetarium/static/media/saturn.801f886ad467514e2c016ac7c4bfa271.svg",
+    "static/media/venus.svg": "/Planetarium/static/media/venus.db5a344418797845ce8f0924814a193b.svg",
+    "static/media/mars.svg": "/Planetarium/static/media/mars.f9dc1ca45a888b568829cd38ca525dcb.svg",
+    "static/media/mercury.svg": "/Planetarium/static/media/mercury.1fce205c50f4657418d4562ca24b008a.svg",
+    "index.html": "/Planetarium/index.html",
+    "main.6a3173e3.css.map": "/Planetarium/static/css/main.6a3173e3.css.map",
+    "main.8a7dbea3.js.map": "/Planetarium/static/js/main.8a7dbea3.js.map",
+    "787.c0b33534.chunk.js.map": "/Planetarium/static/js/787.c0b33534.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6a3173e3.css",
+    "static/js/main.8a7dbea3.js"
+  ]
+}
